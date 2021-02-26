@@ -130,3 +130,7 @@ footer.sticky-bottom { border-top: 1px solid #e8e8e8; padding-top: 40px; padding
 code { color: var(--global-theme-color); }
 
 html.transition, html.transition *, html.transition *:before, html.transition *:after { transition: all 750ms !important; transition-delay: 0 !important; }
+
+#rcorners { border-radius: 25px; box-shadow: 1px 2px 2px black; border: 2px solid #000; padding-left: 5%; width: 75%; height: auto; border-radius: 25px; }
+
+th { padding: 15px; }
