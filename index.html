@@ -109,6 +109,8 @@
           
           
           
+          
+          
           <li class="nav-item ">
               <a class="nav-link" href="/projects/">
                 projects
@@ -215,15 +217,14 @@ projects check <a href="/projects/"> Available projects.</a></p>
   <div class="col-sm-2 abbr">
   
     
-    <abbr class="badge">LPclass</abbr>
+    <abbr class="badge">EnVar</abbr>
     
   
   </div>
 
-  <div id="belcaid_2021" class="col-sm-8">
+  <div id="Belcaid_2021" class="col-sm-8">
     
-      <div class="title">Nonconvex Energy Minimization with Unsupervised Line Process
-	      Classifier for Efficient Piecewise Constant Signals Reconstruction</div>
+      <div class="title">Constrained energy variation for change point detection</div>
       <div class="author">
         
           
@@ -253,7 +254,7 @@ projects check <a href="/projects/"> Available projects.</a></p>
             
               
                 
-                  and <a href="https://www.researchgate.net/profile/Mohammed-Douimi" target="_blank">Douimi, M.</a>
+                  and <a href="https://www.researchgate.net/profile/Belkebir-Hicham" target="_blank">Belkbir, H.</a>
                 
               
             
@@ -263,7 +264,7 @@ projects check <a href="/projects/"> Available projects.</a></p>
 
       <div class="periodical">
       
-        <em>Statistics, Optimization & Information Computing</em>
+        <em>Multidimensional Systems and Signal Processing</em>
       
       
         2021
@@ -277,7 +278,7 @@ projects check <a href="/projects/"> Available projects.</a></p>
     
     
     
-      <a href="http://www.iapress.org/index.php/soic/article/view/994" class="btn btn-sm z-depth-0" role="button" target="_blank">HTML</a>
+      <a href="https://link.springer.com/article/10.1007%2Fs11045-021-00785-w" class="btn btn-sm z-depth-0" role="button" target="_blank">HTML</a>
     
     
     
@@ -291,7 +292,7 @@ projects check <a href="/projects/"> Available projects.</a></p>
     <!-- Hidden abstract block -->
     
     <div class="abstract hidden">
-      <p>In this paper, we focus on the problem of signal smoothing and step-detection for piecewise constant signals. This problem is central to several applications such as human activity analysis, speech or image analysis, and anomaly detection in genetics. We present a two-stage approach to minimize the well-known line process model which arises from the probabilistic representation of the signal and its segmentation. In the first stage, we minimize a TV least square problem to detect the majority of the continuous edges. In the second stage, we apply a combinatorial algorithm to filter all false jumps introduced by the TV solution. The performances of the proposed method were tested on several synthetic examples. In comparison to recent step-preserving denoising algorithms, the acceleration presents a superior speed and competitive step-detection quality.</p>
+      <p>The problem of change point detection can be solved either by online methods, based on a discrepancy measure, or by offline methods. The former tries to detect the change points one by one with a sliding window and leads to a lower computational time but are more sensitive to noise. Conversely, offline methods consider the entire data to detect all the change points which make them more robust against the noise but at a price of higher computational cost. In this paper, we propose an operational search method that combines the benefits of both approaches with the double aim to get higher noise resistance while keeping a blazingly fast time. The search method slides over the edges of the signal to determines their state by considering a global constrained energy. Thanks to the calculus of variation, the computation of this energy is reduced to the estimation of the effective jump for each edge. We study the performance and accuracy of our energy variation method to detect the change points in synthetic and real-world examples. The results compare favorably against state of the art algorithm in terms of speed and accuracy.</p>
     </div>
     
   </div>
@@ -389,130 +390,6 @@ projects check <a href="/projects/"> Available projects.</a></p>
 	        filter the weak features and produce the final jumps. We demonstrate
 	        the effectiveness of our method by comparing its running time and
 	        several detection metrics with state of the art algorithms. </p>
-    </div>
-    
-  </div>
-</div>
-</li>
-<li><div class="row">
-  <div class="col-sm-2 abbr">
-  
-    
-    <abbr class="badge">dpsExt</abbr>
-    
-  
-  </div>
-
-  <div id="Belcaid_2017" class="col-sm-8">
-    
-      <div class="title">A DPS extension to restore blurred and noisy piecewise constant signals</div>
-      <div class="author">
-        
-          
-          
-          
-          
-          
-          
-            
-              
-                <em>Belcaid, A.</em>,
-              
-            
-          
-        
-          
-          
-          
-          
-            
-              
-                
-                
-          
-          
-          
-            
-              
-                
-                  <a href="https://www.researchgate.net/profile/Mohammed-Douimi" target="_blank">Douimi, M.</a>,
-                
-              
-            
-          
-        
-          
-          
-          
-          
-            
-              
-                
-                
-          
-          
-          
-            
-              
-                
-                  and <a href="https://www.researchgate.net/profile/El-Moukhtar-Zemmouri" target="_blank">Zemmouri, E.</a>
-                
-              
-            
-          
-        
-      </div>
-
-      <div class="periodical">
-      
-        <em>Inverse Problems in Science and Engineering</em>
-      
-      
-        2017
-      
-      </div>
-    
-
-    <div class="links">
-    
-      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-    
-    
-    
-      <a href="https://www.tandfonline.com/doi/full/10.1080/17415977.2017.1400029" class="btn btn-sm z-depth-0" role="button" target="_blank">HTML</a>
-    
-    
-    
-    
-    
-    
-    
-    
-    </div>
-
-    <!-- Hidden abstract block -->
-    
-    <div class="abstract hidden">
-      <p>In this paper, we are interested in restoring piecewise constant
-	        signals obtained from a linear operator A (e.g. a blurring operator)
-	        and degraded by a white Gaussian noise. The number of plateaus and
-	        their values are unknown. So the problem could be tackled as a joint
-	        restoration and unsupervised segmentation in the context of linear
-	        inverse problems. The DPS algorithm is a combinatorial algorithm
-	        proposed to solve the classical case, where the linear operator is
-	        reduced to I. The solution is computed as a global minimizer of an
-	        energy function that contains a quadratic fidelity term and a
-	        non-convex pairwise potential term. DPS offers a faster alternative
-	        to the GNC algorithm that minimizes the same energy in a
-	        continuation deterministic approach. We present an extension to the
-	        DPS algorithm for the general case. This extension only requires the
-	        regularity of the matrix , unlike the GNC extension that needs
-	        further computation of its smallest eigenvalue in order to formulate
-	        a convex relaxation. Also, we present a message passing and shared
-	        memory implementation to speed up the running time for high
-	        dimension signals. The parallelization is possible since DPS
-	        evaluate the energy on a set of nodes in a given hypercube, and in
-	        each level of the hypercube, the nodes are independents.</p>
     </div>
     
   </div>
