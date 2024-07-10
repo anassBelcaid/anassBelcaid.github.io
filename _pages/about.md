@@ -17,8 +17,23 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+I'm  an Associate Professor of Artificial Intelligence at the `National School of Applied Sciences in Tetouan`, within the Department of Artificial Intelligence and Digitalization. Before joining the National School of Applied Sciences, I held the position of Full Professor at `Euromed University` in the School of Artificial Intelligence.
+
+## Research
+
+My current research focuses on two main areas:
+
+1. **Time Series Segmentation:** I try explore to innovative techniques for analyzing and segmenting time series data, which is crucial for various applications such as predictive maintenance, financial forecasting, and healthcare monitoring.
+
+2. **Reinforcement Learning:** In the realm of reinforcement learning, I'm  dedicated to addressing several open problems, including:
+   - **Exploration vs. Exploitation Dilemma:** Developing algorithms that can effectively balance exploration and exploitation to improve learning efficiency.
+   - **Scalability:** Enhancing the scalability of reinforcement learning methods to handle large-scale, real-world environments.
+   - **Safety and Robustness:** Ensuring that reinforcement learning systems can operate safely and reliably in dynamic and uncertain settings.
+   - **Multi-Agent Systems:** Advancing the understanding and implementation of reinforcement learning in environments with multiple interacting agents, aiming to foster cooperation and competition.
+
+## Projects
+
+I'm searching for enthusiastic PhD students who are eager to take on the challenge and adventure of tackling hard machine learning problems. If you're interested, please visit the page of available [projects](/projects/) or send me a **research proposal**.
+
