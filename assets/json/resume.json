@@ -137,46 +137,74 @@
   ],
   "publications": [
     {
-      "name": "Zur Elektrody/namik bewegter Körper",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-06-30",
-      "url": "https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies",
-      "summary": "It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source."
+      "name": "Constrained energy variation for change point detection",
+      "publisher": "Multidimensional Systems and Signal Processing",
+      "releaseDate": "2021-07",
+      "url": "https://link.springer.com/article/10.1007/s11045-021-00785-w",
+      "summary": "The problem of change point detection can be solved either by online methods, based on a discrepancy measure, or by offline methods. The former tries to detect the change points one by one with a sliding window and leads to a lower computational time but are more sensitive to noise. Conversely, offline methods consider the entire data to detect all the change points which make them more robust against the noise but at a price of higher computational cost. "
     },
     {
-      "name": "Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-03-18",
-      "url": "https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt",
-      "summary": "In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921."
+      "name": "Nonconvex Energy Minimization with Unsupervised Line Process Classifier for Efficient Piecewise Constant Signals Reconstruction",
+      "publisher": "Statistics, Optimization & Information Computing",
+      "releaseDate": "2021-03-01",
+      "url": "http://www.iapress.org/index.php/soic/article/view/994",
+      "summary": "In this paper, we focus on the problem of signal smoothing and step-detection for piecewise constant signals. This problem is central to several applications such as human activity analysis, speech or image analysis, and anomaly detection in genetics."
     },
     {
-      "name": "Die Grundlage der allgemeinen Relativitätstheorie",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1916-03-20",
-      "url": "https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie",
-      "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
+      "name": "A Novel Online Change Point Detection Using an Approximate Random Blanket and the Line Process Energy",
+      "publisher": "International Journal on Artificial Intelligence Tools,",
+      "releaseDate": "2020-09-20",
+      "url": "https://www.worldscientific.com/doi/abs/10.1142/S0218213020500189",
+      "summary": "In this paper, we focus on the problem of change point detection in piecewise constant signals. This problem is central to several applications such as human activity analysis, speech or image analysis and anomaly detection in genetics. We present a novel window-sliding algorithm for an online change point detection."
+    },
+    {
+      "name": "Recursive reconstruction of piecewise constant signals by minimization of an energy function",
+      "publisher": "Inverse Problems & Imaging",
+      "releaseDate": "2018-04-20",
+      "url": "https://www.aimsciences.org/article/doi/10.3934/ipi.2018038",
+      "summary": "The problem of denoising piecewise constant signals while preserving their jumps is a challenging problem that arises in many scientific areas. Several denoising algorithms exist such as total variation, convex relaxation, Markov random fields models, etc."
+    },
+    {
+      "name": "A DPS filter for nonconvex edge preserving for PieceWise constant signals denoising",
+
+      "publisher": "4th International Conference on Optimization and Applications",
+      "releaseDate": "2018-04-20",
+      "url": "https://ieeexplore.ieee.org/document/8370543",
+      "summary": "A robust estimator, namely the DPS algorithm, for piecewise constant signals denoising, is revised in this paper. Starting from its Markov random field formulation, which defines the solution as the global minimizer of a non-convex non-smooth energy function. "
+    },
+    {
+      "name": "A DPS extension to restore blurred and noisy piecewise constant signals",
+
+      "publisher": "Inverse Problems in Science and Engineering",
+      "releaseDate": "2017-10-20",
+      "url": "https://www.tandfonline.com/doi/full/10.1080/17415977.2017.1400029",
+      "summary": "In this paper, we are interested in restoring piecewise constant signals obtained from a linear operator A (e.g. a blurring operator) and degraded by a white Gaussian noise. "
     }
   ],
   "skills": [
     {
-      "name": "Physics",
+      "name": "Artificial Intelligence",
       "level": "Master",
       "icon": "fa-solid fa-hashtag",
       "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
+        "Machine Learning",
+        "Vision",
+        "Deep learning",
+        "Time Series segmentation",
+        "Hierarchial Learning",
+        "Maximum Entropy learning"
       ]
     }
   ],
   "languages": [
     {
-      "language": "German",
+      "language": "Arabic",
       "fluency": "Native speaker",
+      "icon": ""
+    },
+    {
+      "language": "French",
+      "fluency": "Fluent",
       "icon": ""
     },
     {
@@ -185,40 +213,14 @@
       "icon": ""
     }
   ],
-  "interests": [
-    {
-      "name": "Physics",
-      "icon": "fa-solid fa-tag",
-      "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
-      ]
-    }
-  ],
-  "references": [
-    {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-laptop",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
-    },
-    {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-thumbtack",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
-    }
-  ],
   "projects": [
     {
-      "name": "Quantum Computing",
-      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
-      "startDate": "2018-01-01",
-      "endDate": "2018-01-01",
-      "url": "https://example.com"
+      "name": "Maximum Entropy learning",
+      "summary": "Entropy is an old concept in physics. It can be defined as the measure of chaos or disorder in a system[1]. Higher entropy means lower chaos. It is slightly different in information theory. The mathematician Claude Shannon introduced the entropy in information theory in 1948. Entropy in information theory can be defined as the expected number of bits of information contained in an event. For instance, tossing a fair coin has the entropy of 1. It is because of the probability of having a head or tail is 0.5. The amount of information required to identify it’s head or tail is one by asking one, yes or no question — “is it head ? or is it tail?”. If the entropy is higher, that means we need more information to represent an event. Now, we can say that entropy increases with increases in uncertainty. Another example is that crossing the street has less number of information required to represent/ store/ communicate than playing a poker game. ",
+      "highlights": ["Reinforcement learning", "Maximum Entropy"],
+      "startDate": "2024-01-01",
+      "endDate": "2027-01-01",
+      "url": ""
     }
   ]
 }
