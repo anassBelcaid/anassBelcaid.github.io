@@ -11,7 +11,8 @@ assets/libs/
 node_modules/
 vendor
 .idea
-Gemfile.lock
 Gemfile
+Gemfile.lock
+
 
 
