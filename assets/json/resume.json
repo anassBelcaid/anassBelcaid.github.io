@@ -1,115 +1,139 @@
 {
   "basics": {
-    "name": "Albert Einstein",
+    "name": "Anass Belcaid",
     "label": "Scientist",
     "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "a.belcaid@uae.ac.ma",
+    "phone": "+212-6 19 32 50 99",
+    "url": "https://anassBelcaid.github.io",
+    "summary": "Artificial Intelligence Associate Professor. Competetive programming enthusiat. Chess Lover",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
+      "address": "Kenitra-Morocco",
+      "postalCode": "",
+      "city": "Kenitra",
+      "countryCode": "MA",
+      "region": "Kenitra"
     },
     "profiles": [
       {
         "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
+        "username": "anassbelcaid1",
+        "url": "https://twitter.com/anassbelcaid1"
       }
     ]
   },
   "work": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity"]
-    }
-  ],
-  "volunteer": [
+      "name": "National School of Applied Sciences-Tetouan",
+      "position": "Associate Professor",
+      "url": "https://ensas.uca.ma/",
+      "startDate": "2024-05-08",
+      "endDate": "2024-07-08",
+      "summary": "Teaching artificial intelligence courses to Engineering students",
+      "highlights": ["ML","AI","Maths"]
+    },
+
     {
-      "organization": "People's Climate March",
-      "location": "Zurich, Switzerland",
-      "position": "Lead Organizer",
-      "url": "https://example.com",
-      "startDate": "2014-04-01",
-      "endDate": "2015-07-01",
-      "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
-      "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
+      "name": "National School of Applied Sciences-Safi",
+      "position": "Associate Professor",
+      "url": "https://ensas.uca.ma/",
+      "startDate": "2022-12-08",
+      "endDate": "2024-05-08",
+      "summary": "Teaching artificial intelligence courses to Engineering students",
+      "highlights": ["ML","AI","Maths"]
+    },
+    {
+      "name": "School of Artificial Intelligence Euromed",
+      "position": "Associate Professor",
+      "url": "https://ueuromed.org/",
+      "startDate": "2019-01-08",
+      "endDate": "2022-12-08",
+      "summary": "Teaching artificial intelligence courses to Engineering students",
+      "highlights": ["ML","AI","Maths"]
+    },
+
+    {
+      "name": "National School of Arts and Crafts",
+      "position": "Adjunct Professor",
+      "url": "http://www.ensam-umi.ac.ma/?lang=en",
+      "startDate": "2009-01-08",
+      "endDate": "2019-12-08",
+      "summary": "Teaching Numerical Analysis method",
+      "highlights": ["Scientific computing"]
     }
   ],
   "education": [
     {
-      "institution": "University of Zurich, Zurich, Switzerland",
-      "location": "Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Software Development",
+      "institution": "National School of Arts and Crafts",
+      "location": "Meknes",
+      "url": "http://www.ensam-umi.ac.ma/?lang=en",
+      "area": "Applied Mathematics",
       "studyType": "PhD",
-      "startDate": "1905-01-01",
-      "endDate": "1905-01-01",
+      "startDate": "2015-01-01",
+      "endDate": "2018-01-01",
       "score": "10",
-      "courses": ["Theory of Relativity"]
-    }
-  ],
-  "awards": [
-    {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
+      "courses": ["Optimization", "MRF", "Vision"]
     }
   ],
   "certificates": [
     {
-      "name": "Machine Learning",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-location-dot"
-    },
-    {
-      "name": "Quantum Computing",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
+      "name": "How to Win a Data Science Competition: Learn from Top Kagglers",
+      "date": "2019-03-18",
+      "issuer": "Higher School of Economics",
+      "url": "https://www.coursera.org/account/accomplishments/verify/NSKAM38U52S6",
       "icon": "fa-solid fa-tag"
     },
     {
-      "name": "Quantum Information",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-envelope"
+      "name": "Bayesian Methods for Machine Learning",
+      "date": "2019-03-20",
+      "issuer": "Higher School of Economics",
+      "url": "https://www.coursera.org/account/accomplishments/verify/QADS8JCQ3N43",
+      "icon": "fa-solid fa-tag"
     },
     {
-      "name": "Quantum Cryptography",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-hashtag"
+      "name": "Introduction to Deep Learning",
+      "date": "2019-03-04",
+      "issuer": "Higher School of Economics",
+      "url": "https://www.coursera.org/account/accomplishments/verify/MLWXCHQB33NR",
+      "icon": "fa-solid fa-tag"
     },
     {
-      "name": "Quantum Communication",
-      "date": "2018-01-01",
+      "name": "Statistical Learning",
+      "date": "2018-09-04",
       "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-calendar"
+      "url": "https://verify.lagunita.stanford.edu/SOA/592fd11202f448409c9ee08e7617bee2/",
+      "icon": "fa-solid fa-tag"
     },
     {
-      "name": "Quantum Teleportation",
-      "date": "2018-01-01",
+      "name": "Coding the Matrix: Linear Algebra through Computer Science",
+      "date": "2015-04-01",
+      "issuer": "Coursera",
+      "url": "https://www.coursera.org/course/matrix",
+      "icon": "fa-solid fa-tag"
+    },
+    {
+      "name": "Digital Signal Processing",
+      "date": "2014-07-01",
+      "issuer": "Coursera",
+      "url": "https://www.coursera.org/account/accomplishments/verify/T364M98FQF",
+      "icon": "fa-solid fa-tag"
+    },
+    {
+      "name": "Algorithms: Design and Analysis",
+      "date": "2014-07-01",
       "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-clipboard-check"
+      "url": "",
+      "icon": "fa-solid fa-tag"
+    },
+    {
+      "name": "Algorithms: Design and Analysis 2",
+      "date": "2014-08-01",
+      "issuer": "Stanford University",
+      "url": "",
+      "icon": "fa-solid fa-tag"
     }
+
+
   ],
   "publications": [
     {

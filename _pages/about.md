@@ -2,7 +2,6 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
 
 profile:
   align: right
@@ -35,5 +34,5 @@ My current research focuses on two main areas:
 
 ## Projects
 
-I'm searching for enthusiastic PhD students who are eager to take on the challenge and adventure of tackling hard machine learning problems. If you're interested, please visit the page of available [projects](/projects/) or send me a **research proposal**.
+I'm searching for enthusiastic PhD students who are eager to take on the challenge and adventure of tackling hard Machine Learning problems. If you're interested, please visit the page of available [projects](/projects/) or send me a **research proposal**.
 
