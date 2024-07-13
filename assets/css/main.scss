@@ -23,3 +23,18 @@ $max-content-width: {{ site.max_width }};
   "tabler-icons/tabler-icons-filled.scss",
   "tabler-icons/tabler-icons-outline.scss"
 ;
+
+#rcorners {
+    border-radius: 25px;
+    box-shadow: 1px 2px 2px black;
+    border: 2px solid #000;
+    padding-left: 5%; 
+    width: 75%;
+    height: auto; 
+    border-radius: 25px;
+} 
+
+
+th {
+    padding: 15px
+}
