@@ -6,7 +6,7 @@ description: Here is a list of courses I gave through my career.
 nav: true
 nav_order: 6
 horizontal: false
-display_categories: [2024, 2023, 2022, 2021, 2020]
+display_categories: [2024, 2023, 2022, 2021, 2020, 2018]
 ---
 
 <!-- pages/projects.md -->
