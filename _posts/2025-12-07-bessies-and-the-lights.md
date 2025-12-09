@@ -1,5 +1,5 @@
 ---
-layout: distill
+layout: post
 title: Bessie and the Lights
 tags: distill competitive usaco
 giscus_comments: true
@@ -71,6 +71,21 @@ The solution uses a modified Breadth-First Search (BFS) algorithm with two key e
    - We haven't visited it yet
 
 
+## Explanation
+```mermaid
+graph TD
+    A[Start at room 1,1] --> B[Remove room from queue]
+    B --> C[Mark room as visited]
+    C --> D[Light all connected rooms]
+    D --> E[Check 4 adjacent neighbors]
+    E --> F{Is neighbor lit and unvisited?}
+    F -->|Yes| G[Add to queue]
+    F -->|No| H[Skip]
+    G --> I{Queue empty?}
+    H --> I
+    I -->|No| B
+    I -->|Yes| J[Done! Count visited rooms]
+```
 
 ## Pseudocode
 
