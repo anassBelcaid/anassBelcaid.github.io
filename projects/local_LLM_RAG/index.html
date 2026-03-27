@@ -1,1 +1,312 @@
-<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> Adaptif learning with a local LLM and RAG. | Anass Belcaid </title> <meta name="author" content="Anass Belcaid"> <meta name="description" content="Adaptif learning using a local LLM and fine tuning with a RAG Agent."> <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website"> <link rel="stylesheet" href="/assets/css/bootstrap.min.css?a4b3f509e79c54a512b890d73235ef04"> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="/assets/css/academicons.min.css?f0b7046b84e425c55f3463ac249818f5"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="/assets/img/icon.png?da83b3ebc972aec6809c96466dbd3932"> <link rel="stylesheet" href="/assets/css/main.css?d41d8cd98f00b204e9800998ecf8427e"> <link rel="canonical" href="https://anassbelcaid.github.io/projects/local_LLM_RAG/"> <script src="/assets/js/theme.js?9a0c749ec5240d9cda97bc72359a72c0"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>initTheme();</script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> <span class="font-weight-bold">Anass</span> Belcaid </a> <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse text-right" id="navbarNav"> <ul class="navbar-nav ml-auto flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">about </a> </li> <li class="nav-item "> <a class="nav-link" href="/blog/">blog </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">publications </a> </li> <li class="nav-item active"> <a class="nav-link" href="/projects/">projects <span class="sr-only">(current)</span> </a> </li> <li class="nav-item "> <a class="nav-link" href="/repositories/">repositories </a> </li> <li class="nav-item "> <a class="nav-link" href="/cv/">cv </a> </li> <li class="nav-item "> <a class="nav-link" href="/teaching/">teaching </a> </li> <li class="toggle-container"> <button id="light-toggle" title="Change theme"> <i class="ti ti-sun-moon" id="light-toggle-system"></i> <i class="ti ti-moon-filled" id="light-toggle-dark"></i> <i class="ti ti-sun-filled" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">Adaptif learning with a local LLM and RAG.</h1> <p class="post-description">Adaptif learning using a local LLM and fine tuning with a RAG Agent.</p> </header> <article> <p>This project implements adaptive learning using a local Large Language Model (LLM) combined with Retrieval-Augmented Generation (RAG). It personalizes educational content based on learner progress while dynamically retrieving relevant knowledge from a local document base.</p> </article> <h2>References</h2> <div class="publications"> </div> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Anass Belcaid. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a>. </div> </footer> <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> <script src="/assets/js/bootstrap.bundle.min.js"></script> <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/assets/js/masonry.js" type="text/javascript"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/assets/js/zoom.js?85ddb88934d28b74e78031fd54cf8308"></script> <script src="/assets/js/no_defer.js?2781658a0a2b13ed609542042a859126"></script> <script defer src="/assets/js/common.js?e0514a05c5c95ac1a93a8dfd5249b92e"></script> <script defer src="/assets/js/copy_code.js?12775fdf7f95e901d7119054556e495f" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?d9f17b6adc2311cbabd747f4538bb15f"></script> <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <script async src="https://badge.dimensions.ai/badge.js"></script> <script type="text/javascript">window.MathJax={tex:{tags:"ams"}};</script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.min.js" integrity="sha256-rjmgmaB99riUNcdlrDtcAiwtLIojSxNyUFdl+Qh+rB4=" crossorigin="anonymous"></script> <script defer src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6" crossorigin="anonymous"></script> <script async src="https://www.googletagmanager.com/gtag/js?id=G-HEKPJ57VH3"></script> <script>function gtag(){window.dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-HEKPJ57VH3");</script> <script type="text/javascript">function progressBarSetup(){"max"in document.createElement("progress")?(initializeProgressElement(),$(document).on("scroll",function(){progressBar.attr({value:getCurrentScrollPosition()})}),$(window).on("resize",initializeProgressElement)):(resizeProgressBar(),$(document).on("scroll",resizeProgressBar),$(window).on("resize",resizeProgressBar))}function getCurrentScrollPosition(){return $(window).scrollTop()}function initializeProgressElement(){let e=$("#navbar").outerHeight(!0);$("body").css({"padding-top":e}),$("progress-container").css({"padding-top":e}),progressBar.css({top:e}),progressBar.attr({max:getDistanceToScroll(),value:getCurrentScrollPosition()})}function getDistanceToScroll(){return $(document).height()-$(window).height()}function resizeProgressBar(){progressBar.css({width:getWidthPercentage()+"%"})}function getWidthPercentage(){return getCurrentScrollPosition()/getDistanceToScroll()*100}const progressBar=$("#progress");window.onload=function(){setTimeout(progressBarSetup,50)};</script> <script src="/assets/js/vanilla-back-to-top.min.js?f40d453793ff4f64e238e420181a1d17"></script> <script>addBackToTop();</script> <script src="/assets/js/shortcut-key.js"></script> </body> </html>
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> Adaptive Learning with a Local LLM + RAG | Anass Belcaid </title> <meta name="author" content="Anass Belcaid"> <meta name="description" content="Privacy-first personalized education using local AI and Retrieval-Augmented Generation."> <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website"> <link rel="stylesheet" href="/assets/css/bootstrap.min.css?a4b3f509e79c54a512b890d73235ef04"> <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="/assets/css/academicons.min.css?f0b7046b84e425c55f3463ac249818f5"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="/assets/img/icon.png?da83b3ebc972aec6809c96466dbd3932"> <link rel="stylesheet" href="/assets/css/main.css?d41d8cd98f00b204e9800998ecf8427e"> <link rel="canonical" href="https://anassbelcaid.github.io/projects/local_LLM_RAG/"> <script src="/assets/js/theme.js?9a0c749ec5240d9cda97bc72359a72c0"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>initTheme();</script> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.min.css" integrity="sha256-q9ba7o845pMPFU+zcAll8rv+gC+fSovKsOoNQ6cynuQ=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/styles/github.min.css" integrity="sha256-Oppd74ucMR5a5Dq96FxjEzGF7tTw2fZ/6ksAqDCM8GY=" crossorigin="anonymous" media="screen and (prefers-color-scheme: light)"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/styles/github-dark.min.css" integrity="sha256-nyCNAiECsdDHrr/s2OQsp5l9XeY2ZJ0rMepjCT2AkBk=" crossorigin="anonymous" media="screen and (prefers-color-scheme: dark)"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/diff2html@3.4.47/bundles/css/diff2html.min.css" integrity="sha256-IMBK4VNZp0ivwefSn51bswdsrhk0HoMTLc2GqFHFBXg=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css"> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> <span class="font-weight-bold">Anass</span> Belcaid </a> <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse text-right" id="navbarNav"> <ul class="navbar-nav ml-auto flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">about </a> </li> <li class="nav-item "> <a class="nav-link" href="/blog/">blog </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">publications </a> </li> <li class="nav-item active"> <a class="nav-link" href="/projects/">projects <span class="sr-only">(current)</span> </a> </li> <li class="nav-item "> <a class="nav-link" href="/repositories/">repositories </a> </li> <li class="nav-item "> <a class="nav-link" href="/cv/">cv </a> </li> <li class="nav-item "> <a class="nav-link" href="/teaching/">teaching </a> </li> <li class="toggle-container"> <button id="light-toggle" title="Change theme"> <i class="ti ti-sun-moon" id="light-toggle-system"></i> <i class="ti ti-moon-filled" id="light-toggle-dark"></i> <i class="ti ti-sun-filled" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">Adaptive Learning with a Local LLM + RAG</h1> <p class="post-description">Privacy-first personalized education using local AI and Retrieval-Augmented Generation.</p> </header> <article> <style>.hero-banner{background:linear-gradient(135deg,#0f172a 0%,#1e3a5f 50%,#0f4c75 100%);border-radius:16px;padding:3rem 2.5rem;margin:2rem 0 3rem 0;position:relative;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,0.3)}.hero-banner::before{content:"";position:absolute;top:-60px;right:-60px;width:300px;height:300px;background:radial-gradient(circle,rgba(56,189,248,0.15) 0%,transparent 70%);border-radius:50%}.hero-banner::after{content:"";position:absolute;bottom:-40px;left:-40px;width:220px;height:220px;background:radial-gradient(circle,rgba(99,102,241,0.15) 0%,transparent 70%);border-radius:50%}.hero-banner h2{color:#38bdf8;font-size:1.1rem;letter-spacing:.25em;text-transform:uppercase;margin:0 0 .75rem 0;font-weight:600}.hero-banner p{color:#cbd5e1;font-size:1.05rem;line-height:1.75;max-width:680px;margin:0}.hero-banner .hero-badges{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.25rem}.hero-badge{background:rgba(56,189,248,0.15);border:1px solid rgba(56,189,248,0.35);color:#7dd3fc;border-radius:999px;padding:.25rem .85rem;font-size:.8rem;font-weight:600;letter-spacing:.05em}.stat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:1.25rem;margin:2.5rem 0}.stat-card{background:linear-gradient(145deg,#1e293b,#0f172a);border:1px solid #334155;border-radius:14px;padding:1.5rem 1.25rem;text-align:center;position:relative;overflow:hidden;transition:transform .2s,box-shadow .2s}.stat-card:hover{transform:translateY(-4px);box-shadow:0 12px 35px rgba(0,0,0,0.25)}.stat-card .stat-value{font-size:2.4rem;font-weight:800;background:linear-gradient(135deg,#38bdf8,#818cf8);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;display:block;line-height:1.1}.stat-card .stat-label{color:#94a3b8;font-size:.82rem;margin-top:.4rem;font-weight:500;letter-spacing:.04em;text-transform:uppercase}.stat-card .stat-delta{color:#4ade80;font-size:.85rem;font-weight:700;margin-top:.35rem;display:block}.concept-card{background:#0f172a;border-left:4px solid #38bdf8;border-radius:0 12px 12px 0;padding:1.25rem 1.5rem;margin:1.5rem 0}.concept-card h4{color:#38bdf8;margin:0 0 .5rem 0;font-size:1rem;font-weight:700}.concept-card p{color:#94a3b8;margin:0;font-size:.93rem;line-height:1.65}.info-box{background:linear-gradient(135deg,#042f2e,#064e3b);border:1px solid #065f46;border-radius:12px;padding:1.25rem 1.5rem;margin:2rem 0;display:flex;gap:1rem;align-items:flex-start}.info-box .info-icon{font-size:1.5rem;flex-shrink:0}.info-box p{color:#a7f3d0;margin:0;font-size:.95rem;line-height:1.65}.warning-box{background:linear-gradient(135deg,#2d1b00,#451a03);border:1px solid #92400e;border-radius:12px;padding:1.25rem 1.5rem;margin:2rem 0;display:flex;gap:1rem;align-items:flex-start}.warning-box .info-icon{font-size:1.5rem;flex-shrink:0}.warning-box p{color:#fde68a;margin:0;font-size:.95rem;line-height:1.65}.pipeline-flow{display:flex;align-items:center;flex-wrap:wrap;gap:0;margin:2rem 0;background:#0f172a;border-radius:14px;padding:1.5rem;border:1px solid #1e293b}.pipeline-step{background:linear-gradient(135deg,#1e3a5f,#1e293b);border:1px solid #334155;border-radius:10px;padding:.85rem 1.1rem;text-align:center;min-width:110px;flex:1}.pipeline-step .ps-icon{font-size:1.4rem;display:block}.pipeline-step .ps-label{color:#e2e8f0;font-size:.8rem;font-weight:600;display:block;margin-top:.3rem}.pipeline-step .ps-sub{color:#64748b;font-size:.7rem;display:block;margin-top:.15rem}.pipeline-arrow{color:#38bdf8;font-size:1.3rem;padding:0 .3rem;flex-shrink:0}.comparison-table{width:100%;border-collapse:collapse;margin:2rem 0;border-radius:12px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.2)}.comparison-table th{background:#1e3a5f;color:#7dd3fc;padding:.85rem 1.1rem;font-size:.85rem;text-transform:uppercase;letter-spacing:.08em;text-align:left}.comparison-table td{background:#0f172a;color:#cbd5e1;padding:.8rem 1.1rem;font-size:.88rem;border-bottom:1px solid #1e293b}.comparison-table tr:last-child td{border-bottom:0}.comparison-table .check{color:#4ade80;font-weight:700}.comparison-table .cross{color:#f87171;font-weight:700}.comparison-table .partial{color:#fb923c;font-weight:700}.bkt-visual{background:#0f172a;border:1px solid #1e293b;border-radius:14px;padding:2rem;margin:2rem 0}.bkt-params{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin-top:1.25rem}.bkt-param{background:#1e293b;border-radius:10px;padding:1rem 1.25rem;border-top:3px solid}.bkt-param.p0{border-color:#38bdf8}.bkt-param.pt{border-color:#818cf8}.bkt-param.ps{border-color:#fb923c}.bkt-param.pg{border-color:#4ade80}.bkt-param .param-name{font-size:.75rem;text-transform:uppercase;letter-spacing:.1em;color:#64748b;font-weight:700}.bkt-param .param-sym{font-size:1.5rem;font-weight:800;margin:.3rem 0;font-family:"Georgia",serif;font-style:italic}.bkt-param.p0 .param-sym{color:#38bdf8}.bkt-param.pt .param-sym{color:#818cf8}
+.bkt-param.ps .param-sym{color:#fb923c}.bkt-param.pg .param-sym{color:#4ade80}.bkt-param .param-desc{color:#94a3b8;font-size:.82rem;line-height:1.5}.section-title{display:flex;align-items:center;gap:.75rem;margin:3rem 0 1.5rem 0}.section-title .st-num{background:linear-gradient(135deg,#38bdf8,#818cf8);color:#0f172a;font-size:.8rem;font-weight:800;width:32px;height:32px;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0}.section-title h2{margin:0;font-size:1.4rem}.hardware-spec{background:#0f172a;border:1px solid #1e293b;border-radius:12px;padding:1.5rem;font-family:"Courier New",monospace;margin:1.5rem 0}.hardware-spec .hs-row{display:flex;justify-content:space-between;padding:.5rem 0;border-bottom:1px solid #1e293b;font-size:.88rem}.hardware-spec .hs-row:last-child{border-bottom:0}.hardware-spec .hs-key{color:#64748b}.hardware-spec .hs-val{color:#7dd3fc;font-weight:600}.conclusion-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin:2rem 0}.conclusion-item{background:#0f172a;border:1px solid #1e293b;border-radius:12px;padding:1.25rem;position:relative}.conclusion-item .ci-icon{font-size:1.5rem;margin-bottom:.5rem}.conclusion-item h4{color:#e2e8f0;font-size:.92rem;margin:0 0 .4rem;font-weight:700}.conclusion-item p{color:#64748b;font-size:.83rem;margin:0;line-height:1.55}</style> <div class="hero-banner"> <div class="hero-badges"> <span class="hero-badge">Local LLM</span> <span class="hero-badge">RAG</span> <span class="hero-badge">Adaptive Learning</span> <span class="hero-badge">Moodle</span> <span class="hero-badge">Data Privacy</span> </div> <h2>📄 Published · Journal of Computer Science 2026</h2> <p> Can AI tutoring be both intelligent <em>and</em> private? In this work we answer yes — by combining a locally-deployed Large Language Model with Retrieval-Augmented Generation and Bayesian Knowledge Tracing to deliver a fully on-premise, adaptive educational assistant integrated directly into Moodle. </p> </div> <hr> <h2 id="the-problem-in-one-picture">The Problem in One Picture</h2> <p>Traditional cloud-based LLM tools used in education create a fundamental tension: the very data that should remain most protected — student performance records, questions, and struggles — is the data transmitted to external servers.</p> <div class="warning-box"> <span class="info-icon">⚠️</span> <p><strong>The privacy paradox:</strong> Cloud-based tutoring systems improve with more student data, but improving with student data requires exposing that data. Local, on-device AI breaks this cycle entirely.</p> </div> <p>Beyond privacy, most existing tools apply a <strong>one-size-fits-all</strong> approach: the same explanation, the same difficulty, the same pace — regardless of what the student already knows. Our system addresses both problems simultaneously.</p> <hr> <div class="section-title"> <div class="st-num">01</div> <h2>System Architecture at a Glance</h2> </div> <p>The full system is built from three tightly coupled modules. Here is the complete data flow:</p> <pre><code class="language-mermaid">flowchart TD
+    U([🧑‍🎓 Student]) --&gt;|Query| API
+
+    subgraph LOCAL["🔒 Local Institution Server"]
+        direction TB
+        API[/"🔐 Secure Communication API\n(TLS-encrypted)"/]
+
+        subgraph CORE["Core Processing"]
+            direction LR
+            LLM["🧠 Local LLM\nDeepSeek-V3 671B\n(GGUF Q4_K_M)"]
+            RAG["📚 RAG Module\nDocument Retrieval\n+ Context Injection"]
+        end
+
+        FUSION["⚙️ Information Fusion\nAlign tone · difficulty · domain"]
+        BKT["📊 Adaptive Learning\nBayesian Knowledge Tracing"]
+        LOGS[("🗄️ Storage &amp; Logs\nInteraction History")]
+    end
+
+    KB[("📖 Knowledge Base\nTextbooks · Lecture Notes\n· Technical Manuals")]
+
+    API --&gt; LLM
+    API --&gt; RAG
+    RAG &lt;--&gt;|"Semantic Search"| KB
+    LLM --&gt; FUSION
+    RAG --&gt; FUSION
+    FUSION --&gt; BKT
+    BKT --&gt;|"Contextualized\nPersonalized Output"| U
+    BKT --&gt; LOGS
+    LOGS -.-&gt;|"Proficiency Updates"| BKT
+
+    style LOCAL fill:#0f172a,stroke:#334155,color:#e2e8f0
+    style CORE fill:#1e293b,stroke:#475569,color:#e2e8f0
+    style LLM fill:#1e3a5f,stroke:#38bdf8,color:#7dd3fc
+    style RAG fill:#1e3a5f,stroke:#818cf8,color:#a5b4fc
+    style BKT fill:#064e3b,stroke:#4ade80,color:#86efac
+    style FUSION fill:#2d1b00,stroke:#f59e0b,color:#fde68a
+    style LOGS fill:#1e293b,stroke:#475569,color:#94a3b8
+    style KB fill:#1a1a2e,stroke:#6366f1,color:#a5b4fc
+</code></pre> <div class="info-box"> <span class="info-icon">💡</span> <p>The parallel LLM + RAG design is key: the LLM provides fluency and reasoning while RAG grounds responses in verified educational content — together they reduce hallucinations while maintaining natural, coherent explanations.</p> </div> <hr> <div class="section-title"> <div class="st-num">02</div> <h2>The RAG Pipeline in Detail</h2> </div> <p>Retrieval-Augmented Generation works in two phases: first <em>retrieve</em>, then <em>generate</em>. Here is the step-by-step flow as implemented in our system:</p> <pre><code class="language-mermaid">sequenceDiagram
+    actor S as 🧑‍🎓 Student
+    participant API as Secure API
+    participant QE as Query Encoder
+    participant IDX as Document Index
+    participant KB as Knowledge Base
+    participant GEN as LLM Generator
+    participant FUSE as Info Fusion
+
+    S-&gt;&gt;API: Sends question (encrypted)
+    API-&gt;&gt;QE: Forward query
+    QE-&gt;&gt;IDX: Encode &amp; search for relevant chunks
+    IDX-&gt;&gt;KB: Look up textbooks / lecture notes
+    KB--&gt;&gt;IDX: Return top-k passages
+    IDX--&gt;&gt;QE: Ranked relevant chunks
+    QE-&gt;&gt;GEN: Query + retrieved context
+    Note over GEN: Generates response grounded&lt;br/&gt;in retrieved knowledge
+    GEN--&gt;&gt;FUSE: Raw response + context
+    FUSE--&gt;&gt;API: Pedagogically tuned output
+    API--&gt;&gt;S: Final personalized answer
+</code></pre> <div class="pipeline-flow"> <div class="pipeline-step"> <span class="ps-icon">📝</span> <span class="ps-label">Student Query</span> <span class="ps-sub">Natural language</span> </div> <div class="pipeline-arrow">→</div> <div class="pipeline-step"> <span class="ps-icon">🔢</span> <span class="ps-label">Query Encode</span> <span class="ps-sub">Vector embedding</span> </div> <div class="pipeline-arrow">→</div> <div class="pipeline-step"> <span class="ps-icon">🔍</span> <span class="ps-label">Retrieval</span> <span class="ps-sub">Top-k chunks</span> </div> <div class="pipeline-arrow">→</div> <div class="pipeline-step"> <span class="ps-icon">🧠</span> <span class="ps-label">LLM Generate</span> <span class="ps-sub">Grounded response</span> </div> <div class="pipeline-arrow">→</div> <div class="pipeline-step"> <span class="ps-icon">⚙️</span> <span class="ps-label">Fuse + Adapt</span> <span class="ps-sub">BKT tuning</span> </div> <div class="pipeline-arrow">→</div> <div class="pipeline-step"> <span class="ps-icon">✅</span> <span class="ps-label">Output</span> <span class="ps-sub">Personalized answer</span> </div> </div> <hr> <div class="section-title"> <div class="st-num">03</div> <h2>Adaptive Learning: Bayesian Knowledge Tracing</h2> </div> <p>The adaptive core of our system is <strong>Bayesian Knowledge Tracing (BKT)</strong>, a probabilistic model that continuously updates its estimate of what a student knows based on every interaction.</p> <div class="bkt-visual"> <h3 style="color:#e2e8f0; margin: 0 0 0.75rem 0; font-size: 1.1rem;">🎲 The Four BKT Parameters</h3> <p style="color:#64748b; font-size:0.88rem; margin: 0 0 1rem 0;">BKT tracks mastery through four core probabilities, updated after every student response:</p> <div class="bkt-params"> <div class="bkt-param p0"> <div class="param-name">Initial Mastery</div> <div class="param-sym">p(L₀)</div> <div class="param-desc">Probability the student already knows the skill before any practice begins.</div> </div> <div class="bkt-param pt"> <div class="param-name">Learning Rate</div> <div class="param-sym">p(T)</div> <div class="param-desc">Probability of transitioning from non-mastery to mastery after a practice attempt.</div> </div> <div class="bkt-param ps"> <div class="param-name">Slip</div> <div class="param-sym">p(S)</div> <div class="param-desc">Probability of answering incorrectly despite having mastered the skill (careless error).</div> </div> <div class="bkt-param pg"> <div class="param-name">Guess</div> <div class="param-sym">p(G)</div> <div class="param-desc">Probability of answering correctly without having mastered the skill (lucky guess).</div> </div> </div> </div> <p>The BKT-estimated mastery probability then <strong>directly controls</strong> how the LLM is prompted:</p> <pre><code class="language-mermaid">flowchart LR
+    SCORE{"BKT Mastery\nEstimate"}
+
+    SCORE --&gt;|"p(L) &lt; 0.4\nLow Mastery"| LOW["🟥 Foundational Mode\n• Retrieve basic concepts via RAG\n• Step-by-step LLM explanations\n• Simple analogies &amp; examples"]
+
+    SCORE --&gt;|"0.4 ≤ p(L) &lt; 0.75\nDeveloping"| MID["🟨 Scaffolded Mode\n• Mix of explanation + challenge\n• Guided problem-solving\n• Conceptual connections"]
+
+    SCORE --&gt;|"p(L) ≥ 0.75\nHigh Mastery"| HIGH["🟩 Advanced Mode\n• Concise, technical responses\n• Complex problems &amp; edge cases\n• Cross-concept synthesis"]
+
+    style SCORE fill:#1e3a5f,stroke:#38bdf8,color:#7dd3fc
+    style LOW fill:#450a0a,stroke:#f87171,color:#fca5a5
+    style MID fill:#2d1b00,stroke:#f59e0b,color:#fde68a
+    style HIGH fill:#052e16,stroke:#4ade80,color:#86efac
+</code></pre> <hr> <div class="section-title"> <div class="st-num">04</div> <h2>Adaptive Algorithms Compared</h2> </div> <p>Our system draws on three complementary adaptive techniques. Here is how they relate:</p> <pre><code class="language-mermaid">mindmap
+  root((Adaptive\nLearning\nCore))
+    BKT
+      Skill mastery tracking
+      Probabilistic updates
+      Drives LLM prompting
+      Bayesian inference
+    IRT
+      1PL Rasch Model
+      2PL Discrimination
+      3PL Guessing
+      Question difficulty calibration
+    RL
+      Q-learning rewards
+      Dynamic path optimization
+      Real-time feedback loop
+      Engagement maximization
+</code></pre> <table class="comparison-table"> <thead> <tr> <th>Technique</th> <th>What it Models</th> <th>Real-time</th> <th>Interpretable</th> <th>Our Role</th> </tr> </thead> <tbody> <tr> <td><strong>BKT</strong></td> <td>Skill mastery over time</td> <td class="check">✓ Yes</td> <td class="check">✓ High</td> <td>Primary scoring &amp; LLM prompt control</td> </tr> <tr> <td><strong>IRT</strong></td> <td>Item difficulty &amp; student ability</td> <td class="partial">~ Partial</td> <td class="check">✓ High</td> <td>Question difficulty calibration</td> </tr> <tr> <td><strong>RL</strong></td> <td>Optimal exercise sequencing</td> <td class="check">✓ Yes</td> <td class="cross">✗ Low</td> <td>Learning path optimization</td> </tr> <tr> <td><strong>Deep Rec.</strong></td> <td>Content similarity patterns</td> <td class="partial">~ Partial</td> <td class="cross">✗ Low</td> <td>Supplementary material suggestion</td> </tr> </tbody> </table> <hr> <div class="section-title"> <div class="st-num">05</div> <h2>Pilot Study Results</h2> </div> <p>We ran a pilot study in an <strong>Industrial Maintenance &amp; Operational Safety</strong> course for Supply Chain Management students — a technically demanding, interdisciplinary context that is a strong test of adaptability.</p> <div class="stat-grid"> <div class="stat-card"> <span class="stat-value">+15%</span> <span class="stat-label">Success Rate</span> <span class="stat-delta">65% → 80%</span> </div> <div class="stat-card"> <span class="stat-value">−20%</span> <span class="stat-label">Response Time</span> <span class="stat-delta">45s → 36s</span> </div> <div class="stat-card"> <span class="stat-value">+60%</span> <span class="stat-label">Daily Interactions</span> <span class="stat-delta">5 → 8 per student</span> </div> <div class="stat-card"> <span class="stat-value">↑</span> <span class="stat-label">Satisfaction</span> <span class="stat-delta">Moderate → High</span> </div> </div> <h3 id="success-rate--before-vs-after">Success Rate — Before vs. After</h3> <pre><code class="language-chartjs">{
+  "type": "bar",
+  "data": {
+    "labels": ["Baseline", "With System"],
+    "datasets": [{
+      "label": "Student Success Rate (%)",
+      "data": [65, 80],
+      "backgroundColor": ["rgba(248,113,113,0.7)", "rgba(74,222,128,0.7)"],
+      "borderColor": ["#f87171", "#4ade80"],
+      "borderWidth": 2,
+      "borderRadius": 8
+    }]
+  },
+  "options": {
+    "responsive": true,
+    "plugins": {
+      "legend": { "display": false },
+      "title": {
+        "display": true,
+        "text": "Quiz &amp; Assignment Success Rate (%)",
+        "color": "#e2e8f0",
+        "font": { "size": 14 }
+      }
+    },
+    "scales": {
+      "y": {
+        "beginAtZero": true,
+        "max": 100,
+        "grid": { "color": "rgba(255,255,255,0.07)" },
+        "ticks": { "color": "#94a3b8" }
+      },
+      "x": {
+        "grid": { "display": false },
+        "ticks": { "color": "#94a3b8" }
+      }
+    }
+  }
+}
+</code></pre> <h3 id="engagement-over-the-pilot-period">Engagement Over the Pilot Period</h3> <pre><code class="language-chartjs">{
+  "type": "line",
+  "data": {
+    "labels": ["Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6"],
+    "datasets": [
+      {
+        "label": "Daily Interactions (with system)",
+        "data": [5.1, 5.8, 6.4, 7.1, 7.6, 8.0],
+        "borderColor": "#38bdf8",
+        "backgroundColor": "rgba(56,189,248,0.1)",
+        "fill": true,
+        "tension": 0.4,
+        "pointBackgroundColor": "#38bdf8"
+      },
+      {
+        "label": "Baseline (no system)",
+        "data": [5.0, 5.0, 5.1, 4.9, 5.0, 5.0],
+        "borderColor": "#f87171",
+        "backgroundColor": "rgba(248,113,113,0.05)",
+        "fill": true,
+        "tension": 0.4,
+        "borderDash": [5, 5],
+        "pointBackgroundColor": "#f87171"
+      }
+    ]
+  },
+  "options": {
+    "responsive": true,
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Average Daily Student Interactions Over Time",
+        "color": "#e2e8f0",
+        "font": { "size": 14 }
+      },
+      "legend": {
+        "labels": { "color": "#94a3b8" }
+      }
+    },
+    "scales": {
+      "y": {
+        "min": 3,
+        "grid": { "color": "rgba(255,255,255,0.07)" },
+        "ticks": { "color": "#94a3b8" }
+      },
+      "x": {
+        "grid": { "color": "rgba(255,255,255,0.04)" },
+        "ticks": { "color": "#94a3b8" }
+      }
+    }
+  }
+}
+</code></pre> <h3 id="simulated-bkt-mastery-progression">Simulated BKT Mastery Progression</h3> <pre><code class="language-chartjs">{
+  "type": "line",
+  "data": {
+    "labels": ["Q1","Q2","Q3","Q4","Q5","Q6","Q7","Q8","Q9","Q10"],
+    "datasets": [
+      {
+        "label": "High-engagement student",
+        "data": [0.25, 0.35, 0.50, 0.61, 0.70, 0.78, 0.83, 0.87, 0.90, 0.92],
+        "borderColor": "#4ade80",
+        "fill": false, "tension": 0.4,
+        "pointBackgroundColor": "#4ade80"
+      },
+      {
+        "label": "Average student",
+        "data": [0.22, 0.28, 0.35, 0.42, 0.50, 0.57, 0.63, 0.68, 0.72, 0.75],
+        "borderColor": "#38bdf8",
+        "fill": false, "tension": 0.4,
+        "pointBackgroundColor": "#38bdf8"
+      },
+      {
+        "label": "Struggling student",
+        "data": [0.20, 0.22, 0.25, 0.30, 0.33, 0.38, 0.44, 0.50, 0.55, 0.60],
+        "borderColor": "#f87171",
+        "fill": false, "tension": 0.4,
+        "pointBackgroundColor": "#f87171"
+      }
+    ]
+  },
+  "options": {
+    "responsive": true,
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "BKT Mastery Probability p(L) Across 10 Quiz Questions",
+        "color": "#e2e8f0",
+        "font": { "size": 14 }
+      },
+      "legend": { "labels": { "color": "#94a3b8" } }
+    },
+    "scales": {
+      "y": {
+        "min": 0, "max": 1,
+        "grid": { "color": "rgba(255,255,255,0.07)" },
+        "ticks": { "color": "#94a3b8" },
+        "title": { "display": true, "text": "p(L) — mastery probability", "color": "#64748b" }
+      },
+      "x": {
+        "grid": { "color": "rgba(255,255,255,0.04)" },
+        "ticks": { "color": "#94a3b8" }
+      }
+    }
+  }
+}
+</code></pre> <hr> <div class="section-title"> <div class="st-num">06</div> <h2>Privacy: Why Local Deployment Matters</h2> </div> <pre><code class="language-mermaid">flowchart LR
+    subgraph CLOUD["☁️ Cloud LLM (Traditional)"]
+        direction TB
+        CS([Student]) --&gt;|"⚠️ Raw data leaves campus"| CAPI[External API]
+        CAPI --&gt; CLLM[Cloud LLM]
+        CLLM --&gt; CDATA[("Third-party\nData Storage")]
+        CDATA -.-&gt;|"❓ Unknown retention\n&amp; usage policies"| CDATA
+    end
+
+    subgraph LOCAL2["🔒 Our Local System"]
+        direction TB
+        LS([Student]) --&gt;|"🔐 Encrypted local call"| LAPI[Secure API]
+        LAPI --&gt; LLLM[Local LLM]
+        LLLM --&gt; LDATA[("On-premise\nStorage")]
+        LDATA -.-&gt;|"✅ Institution controls\nall data"| LDATA
+    end
+
+    style CLOUD fill:#2d0a0a,stroke:#f87171
+    style LOCAL2 fill:#042f2e,stroke:#4ade80
+</code></pre> <table class="comparison-table"> <thead> <tr> <th>Property</th> <th>Cloud LLM</th> <th>Our Local System</th> </tr> </thead> <tbody> <tr> <td>Student data location</td> <td class="cross">✗ External servers</td> <td class="check">✓ On-premise only</td> </tr> <tr> <td>Internet dependency</td> <td class="cross">✗ Required</td> <td class="check">✓ Optional</td> </tr> <tr> <td>Curriculum customization</td> <td class="partial">~ Limited</td> <td class="check">✓ Full control</td> </tr> <tr> <td>GDPR / data compliance</td> <td class="cross">✗ Complex</td> <td class="check">✓ Straightforward</td> </tr> <tr> <td>Response personalization</td> <td class="partial">~ Generic</td> <td class="check">✓ BKT-driven</td> </tr> <tr> <td>Offline functionality</td> <td class="cross">✗ No</td> <td class="check">✓ Yes</td> </tr> </tbody> </table> <hr> <div class="section-title"> <div class="st-num">07</div> <h2>Moodle Plugin Architecture</h2> </div> <p>We shipped the system as a native Moodle block plugin, so instructors can deploy it to any course with a single install.</p> <pre><code class="language-mermaid">flowchart TD
+    MOODLE["🎓 Moodle LMS"]
+
+    subgraph PLUGIN["block_llm Plugin"]
+        direction TB
+        BLOCK["block_llm.php\n(Block UI + Form)"]
+        VERSION["version.php\n(Plugin metadata)"]
+        LANG["lang/en/block_llm.php\n(i18n strings)"]
+        BLOCK --- VERSION
+        BLOCK --- LANG
+    end
+
+    subgraph BACKEND["Local Backend (API)"]
+        ROUTER["API Router\n(TLS secured)"]
+        RAG2["RAG Pipeline"]
+        LLM2["DeepSeek V3\nllama.cpp"]
+        BKT2["BKT Engine"]
+
+        ROUTER --&gt; RAG2
+        ROUTER --&gt; LLM2
+        LLM2 --&gt; BKT2
+        RAG2 --&gt; LLM2
+    end
+
+    MOODLE --&gt; PLUGIN
+    BLOCK --&gt;|"HTTPS POST\n(optional_param sanitized)"| ROUTER
+    BKT2 --&gt;|"JSON Response"| BLOCK
+
+    style PLUGIN fill:#1e293b,stroke:#818cf8
+    style BACKEND fill:#0f172a,stroke:#38bdf8
+    style MOODLE fill:#1e3a5f,stroke:#7dd3fc,color:#e2e8f0
+</code></pre> <p>The plugin’s <code class="language-plaintext highlighter-rouge">get_llm_response()</code> method (shown in the paper as a stub) is where the real API call replaces the simulation — connecting over a TLS-secured internal endpoint to the locally running inference server.</p> <hr> <div class="section-title"> <div class="st-num">08</div> <h2>Hardware &amp; Deployment Stack</h2> </div> <div class="hardware-spec"> <div class="hs-row"> <span class="hs-key">CPU</span><span class="hs-val">AMD EPYC 7543P — 32 cores / 64 threads</span> </div> <div class="hs-row"> <span class="hs-key">GPU</span><span class="hs-val">2× NVIDIA A6000 Ada (48 GB VRAM each)</span> </div> <div class="hs-row"> <span class="hs-key">RAM</span><span class="hs-val">256 GB DDR5 ECC</span> </div> <div class="hs-row"> <span class="hs-key">Storage</span><span class="hs-val">2 TB NVMe SSD (RAID 1)</span> </div> <div class="hs-row"> <span class="hs-key">Model</span><span class="hs-val">DeepSeek-V3 671B — GGUF Q4_K_M (4-bit quantized)</span> </div> <div class="hs-row"> <span class="hs-key">Inference</span><span class="hs-val">llama.cpp + custom RAG pipeline</span> </div> <div class="hs-row"> <span class="hs-key">Network</span><span class="hs-val">1 Gbps internal · TLS-secured API</span> </div> <div class="hs-row"> <span class="hs-key">OS</span><span class="hs-val">Ubuntu 22.04 LTS</span> </div> </div> <pre><code class="language-mermaid">graph LR
+    subgraph FUTURE["🚀 Future: True Edge Deployment"]
+        SD["🖥️ Student Device\n(on-device inference)"] 
+        SS["🏫 School Server\n(private on-premise)"]
+        SD &lt;--&gt;|"Lightweight API"| SS
+    end
+
+    subgraph NOW["🔬 Current: Centralized Test Server"]
+        CS2["🖧 Central Server\n(AMD EPYC + 2× A6000)"]
+    end
+
+    NOW -.-&gt;|"Transition path"| FUTURE
+
+    style FUTURE fill:#042f2e,stroke:#4ade80
+    style NOW fill:#1e3a5f,stroke:#38bdf8
+</code></pre> <hr> <div class="section-title"> <div class="st-num">09</div> <h2>Limitations &amp; Road Ahead</h2> </div> <pre><code class="language-mermaid">quadrantChart
+    title Limitation Severity vs. Implementation Effort to Resolve
+    x-axis Low Effort --&gt; High Effort
+    y-axis Low Severity --&gt; High Severity
+    quadrant-1 "⚡ Fix First"
+    quadrant-2 "🔬 Research Needed"
+    quadrant-3 "📋 Monitor"
+    quadrant-4 "🛠️ Plan for Scale"
+    Bias in personalization: [0.75, 0.80]
+    Hardware requirements: [0.65, 0.65]
+    RAG data fusion quality: [0.45, 0.60]
+    Real-time latency: [0.40, 0.55]
+    Centralized server: [0.30, 0.45]
+    Model hallucinations: [0.70, 0.70]
+</code></pre> <div class="conclusion-grid"> <div class="conclusion-item"> <div class="ci-icon">⚡</div> <h4>Performance Optimization</h4> <p>Reduce latency through hardware acceleration, parallel processing, and smarter caching strategies for RAG retrieval.</p> </div> <div class="conclusion-item"> <div class="ci-icon">🔗</div> <h4>Enhanced Data Fusion</h4> <p>Develop more coherent integration of retrieved passages with generated text to eliminate disconnected or off-topic responses.</p> </div> <div class="conclusion-item"> <div class="ci-icon">⚖️</div> <h4>Bias Detection &amp; Fairness</h4> <p>Embed fairness-aware algorithms to detect and correct content or scoring bias across diverse learner profiles.</p> </div> <div class="conclusion-item"> <div class="ci-icon">📱</div> <h4>True Edge Deployment</h4> <p>Transition from centralized testing server to on-device or school-network inference for full data sovereignty.</p> </div> <div class="conclusion-item"> <div class="ci-icon">🌍</div> <h4>Scale &amp; Validation</h4> <p>Expand evaluation to multiple disciplines and larger student cohorts to confirm and generalize these findings.</p> </div> <div class="conclusion-item"> <div class="ci-icon">🌐</div> <h4>Multilingual Support</h4> <p>Leverage open-source multilingual models to extend access to students in non-English-language institutions.</p> </div> </div> <hr> <h2 id="conclusion">Conclusion</h2> <p>This work demonstrates that privacy and pedagogical effectiveness are not competing goals — they can be achieved together. By running entirely on institutional infrastructure, our system gives students a capable AI tutor without surrendering control of their data. By coupling that LLM with RAG and Bayesian Knowledge Tracing, it delivers responses that are not only factually grounded but genuinely calibrated to each learner’s current knowledge state.</p> <p>The pilot results are encouraging: a <strong>+15% improvement in success rates</strong>, a <strong>20% reduction in response time</strong>, and a <strong>60% boost in daily engagement</strong> — all in a technically demanding course context. Qualitative feedback from both students and instructors reinforces these numbers.</p> <p>The path forward is clear: move toward true edge deployment, harden bias-mitigation mechanisms, and scale validation across disciplines. The foundations are in place for AI-powered education that is simultaneously more intelligent, more equitable, and more trustworthy.</p> <hr> <p><em>Published in the <strong>Journal of Computer Science</strong>, 2026, Vol. 22(4): 1145–1157. DOI: <a href="https://thescipub.com/pdf/jcssp.2026.1145.1157.pdf" rel="external nofollow noopener" target="_blank">10.3844/jcssp.2026.1145.1157</a></em></p> </article> <h2>References</h2> <div class="publications"> </div> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Anass Belcaid. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a>. </div> </footer> <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> <script src="/assets/js/bootstrap.bundle.min.js"></script> <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/assets/js/masonry.js" type="text/javascript"></script> <script defer src="https://cdn.jsdelivr.net/npm/mermaid@10.7.0/dist/mermaid.min.js" integrity="sha256-TtLOdUA8mstPoO6sGvHIGx2ceXrrX4KgIItO06XOn8A=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js" integrity="sha256-1rA678n2xEx7x4cTZ5x4wpUCj6kUMZEZ5cxLSVSFWxw=" crossorigin="anonymous"></script> <script>let mermaidTheme=determineComputedTheme();document.addEventListener("readystatechange",()=>{"complete"===document.readyState&&(document.querySelectorAll("pre>code.language-mermaid").forEach(e=>{const t=e.textContent,d=e.parentElement;d.classList.add("unloaded");let a=document.createElement("pre");a.classList.add("mermaid");const n=document.createTextNode(t);a.appendChild(n),d.after(a)}),mermaid.initialize({theme:mermaidTheme}),"undefined"!=typeof d3&&window.addEventListener("load",function(){d3.selectAll(".mermaid svg").each(function(){var e=d3.select(this);e.html("<g>"+e.html()+"</g>");var t=e.select("g"),d=d3.zoom().on("zoom",function(e){t.attr("transform",e.transform)});e.call(d)})}))});</script> <script src="https://cdn.jsdelivr.net/npm/diff2html@3.4.47/bundles/js/diff2html-ui.min.js" integrity="sha256-eU2TVHX633T1o/bTQp6iIJByYJEtZThhF9bKz/DcbbY=" crossorigin="anonymous"></script> <script>let diff2HtmlTheme=determineComputedTheme();document.addEventListener("readystatechange",()=>{"complete"===document.readyState&&document.querySelectorAll("pre>code.language-diff2html").forEach(e=>{const t=e.textContent,d=e.parentElement;d.classList.add("unloaded");let l=document.createElement("div");l.classList.add("diff2html"),d.after(l),new Diff2HtmlUI(l,t,{colorScheme:diff2HtmlTheme,drawFileList:!0,highlight:!0,matching:"lines"}).draw()})});</script> <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.min.js" integrity="sha256-MgH13bFTTNqsnuEoqNPBLDaqxjGH+lCpqrukmXc8Ppg=" crossorigin="anonymous"></script> <script>document.addEventListener("readystatechange",()=>{"complete"===document.readyState&&document.querySelectorAll("pre>code.language-geojson").forEach(e=>{const t=e.textContent,a=e.parentElement;a.classList.add("unloaded");let o=document.createElement("div");o.classList.add("map"),a.after(o);var n=L.map(o);L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:19,attribution:'&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'}).addTo(n);let d=L.geoJSON(JSON.parse(t)).addTo(n);n.fitBounds(d.getBounds())})});</script> <script defer src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js" integrity="sha256-0q+JdOlScWOHcunpUk21uab1jW7C1deBQARHtKMcaB4=" crossorigin="anonymous"></script> <script>$(document).ready(function(){var t=null,a=null,e=null,n="";$(".language-chartjs").each(function(){a=$(this),t=$("<canvas></canvas>"),n=a.text(),a.text("").append(t),(e=t.get(0).getContext("2d"))&&n&&new Chart(e,JSON.parse(n))&&a.attr("data-processed",!0)})});</script> <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js" integrity="sha256-QvgynZibb2U53SsVu98NggJXYqwRL7tg3FeyfXvPOUY=" crossorigin="anonymous"></script> <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/theme/dark-fresh-cut.js" integrity="sha256-sm6Ui9w41++ZCWmIWDLC18a6ki72FQpWDiYTDxEPXwU=" crossorigin="anonymous"></script> <script>let echartsTheme=determineComputedTheme();document.addEventListener("readystatechange",()=>{"complete"===document.readyState&&document.querySelectorAll("pre>code.language-echarts").forEach(e=>{const t=e.textContent,a=e.parentElement;a.classList.add("unloaded");let r=document.createElement("div");if(r.classList.add("echarts"),a.after(r),"dark"===echartsTheme)var n=echarts.init(r,"dark-fresh-cut");else n=echarts.init(r);n.setOption(JSON.parse(t)),window.addEventListener("resize",function(){n.resize()})})});</script> <script defer src="https://cdn.jsdelivr.net/npm/vega@5.27.0/build/vega.min.js" integrity="sha256-Yot/cfgMMMpFwkp/5azR20Tfkt24PFqQ6IQS+80HIZs=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/vega-lite@5.16.3/build/vega-lite.min.js" integrity="sha256-TvBvIS5jUN4BSy009usRjNzjI1qRrHPYv7xVLJyjUyw=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/vega-embed@6.24.0/build/vega-embed.min.js" integrity="sha256-FPCJ9JYCC9AZSpvC/t/wHBX7ybueZhIqOMjpWqfl3DU=" crossorigin="anonymous"></script> <script>let vegaTheme=determineComputedTheme();document.addEventListener("readystatechange",()=>{"complete"===document.readyState&&document.querySelectorAll("pre>code.language-vega_lite").forEach(e=>{const t=e.textContent,a=e.parentElement;a.classList.add("unloaded");let d=document.createElement("div");d.classList.add("vega-lite"),a.after(d),"dark"===vegaTheme?vegaEmbed(d,JSON.parse(t),{theme:"dark"}):vegaEmbed(d,JSON.parse(t))})});</script> <script defer src="https://tikzjax.com/v1/tikzjax.js" integrity="sha256-+1qyucCXRZJrCg3lm3KxRt/7WXaYhBid4/1XJRHGB1E=" crossorigin="anonymous"></script> <script src="/assets/js/typograms.js?63f3caa50c7a9624f953b3aec207afa6"></script> <script>document.addEventListener("readystatechange",()=>{"complete"===document.readyState&&document.querySelectorAll("pre>code.language-typograms").forEach(e=>{const t=e.textContent,n=e.parentElement.parentElement;let a=document.createElement("pre");a.classList.add("typogram");const d=create("\n"+t,.3,!1);a.appendChild(d),n.appendChild(a),n.removeChild(e.parentElement)})});</script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/assets/js/zoom.js?85ddb88934d28b74e78031fd54cf8308"></script> <script src="/assets/js/no_defer.js?2781658a0a2b13ed609542042a859126"></script> <script defer src="/assets/js/common.js?e0514a05c5c95ac1a93a8dfd5249b92e"></script> <script defer src="/assets/js/copy_code.js?12775fdf7f95e901d7119054556e495f" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?d9f17b6adc2311cbabd747f4538bb15f"></script> <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <script async src="https://badge.dimensions.ai/badge.js"></script> <script type="text/javascript">window.MathJax={tex:{tags:"ams"}};</script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.min.js" integrity="sha256-rjmgmaB99riUNcdlrDtcAiwtLIojSxNyUFdl+Qh+rB4=" crossorigin="anonymous"></script> <script defer src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6" crossorigin="anonymous"></script> <script async src="https://www.googletagmanager.com/gtag/js?id=G-HEKPJ57VH3"></script> <script>function gtag(){window.dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-HEKPJ57VH3");</script> <script type="text/javascript">function progressBarSetup(){"max"in document.createElement("progress")?(initializeProgressElement(),$(document).on("scroll",function(){progressBar.attr({value:getCurrentScrollPosition()})}),$(window).on("resize",initializeProgressElement)):(resizeProgressBar(),$(document).on("scroll",resizeProgressBar),$(window).on("resize",resizeProgressBar))}function getCurrentScrollPosition(){return $(window).scrollTop()}function initializeProgressElement(){let e=$("#navbar").outerHeight(!0);$("body").css({"padding-top":e}),$("progress-container").css({"padding-top":e}),progressBar.css({top:e}),progressBar.attr({max:getDistanceToScroll(),value:getCurrentScrollPosition()})}function getDistanceToScroll(){return $(document).height()-$(window).height()}function resizeProgressBar(){progressBar.css({width:getWidthPercentage()+"%"})}function getWidthPercentage(){return getCurrentScrollPosition()/getDistanceToScroll()*100}const progressBar=$("#progress");window.onload=function(){setTimeout(progressBarSetup,50)};</script> <script src="/assets/js/vanilla-back-to-top.min.js?f40d453793ff4f64e238e420181a1d17"></script> <script>addBackToTop();</script> <script src="/assets/js/shortcut-key.js"></script> </body> </html>
